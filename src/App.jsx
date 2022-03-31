@@ -1,9 +1,11 @@
-import "./App.css";
 import { useContext, useState } from "react";
 import MainContext from "./Context/MainContext";
 import axios from "axios";
 import { useEffect } from "react";
-
+import Form from "./Components/Form";
+import LinkItem from "./Components/LinkItem";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
 function App() {
   const { link, setLink, shortLink, setShortLink, linkArray, setLinkArray } =
     useContext(MainContext);
@@ -39,18 +41,18 @@ function App() {
   const inputHandler = (e) => {
     const input = e.target.value;
     setLink(input);
-
-    console.log(link);
   };
   const submitHandler = (e) => {
     e.preventDefault();
     setApiData(`${api}${link}`);
     setLink("");
-    console.log(linkArray);
   };
-  console.log("shortlink", shortLink);
+
   return (
     <div className="App">
+      <Header />
+      <Form />
+      <LinkItem />
       <form onSubmit={submitHandler}>
         <input type="text" value={link} onChange={inputHandler} />
         <input type="submit" value="Shorten It!" onClick={submitHandler} />
