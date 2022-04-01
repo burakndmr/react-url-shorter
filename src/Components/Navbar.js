@@ -14,14 +14,14 @@ const Navbar = () => {
       </div>
       <div className={isOpen ? "navbar-element open" : "navbar-element close"}>
         <div className="links">
-          <a href="/">Features</a>
-          <a href="/">Pricing</a>
-          <a href="/">Resources</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
         </div>
 
         <div className="login-buttons">
-          <a href="/">Login</a>
-          <a href="/">Sign Up</a>
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
         </div>
       </div>
       <div className="mobile">
