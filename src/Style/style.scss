@@ -6,3 +6,76 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
 }
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+  .logo {
+    margin-right: 1.2rem;
+  }
+  & .navbar-element {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    & .links {
+      a {
+        margin-right: 1em;
+      }
+    }
+    & .login-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        margin-right: 1em;
+      }
+    }
+    &.close {
+      @media screen and (max-width: 800px) {
+        display: none;
+        transition: display 0.5s ease-in-out;
+      }
+    }
+    &.open {
+      @media screen and (max-width: 800px) {
+        transition: display 0.5s ease-in-out;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 6rem;
+        width: 90%;
+        &,
+        .links,
+        .login-buttons {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        z-index: 99;
+      }
+    }
+  }
+  & .mobile {
+    display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+}
+
+// & .mobile {
+//   display: none;
+//   @media screen and (max-width: 800px) {
+//     display: block;
+//   }
+// }
+
+.image {
+  overflow: hidden;
+}

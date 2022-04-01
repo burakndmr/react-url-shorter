@@ -6,4 +6,109 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
 }
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0;
+}
+
+nav .logo {
+  margin-right: 1.2rem;
+}
+
+nav .navbar-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navbar-element .links a {
+  margin-right: 1em;
+}
+
+nav .navbar-element .login-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navbar-element .login-buttons a {
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  nav .navbar-element.close {
+    display: none;
+    -webkit-transition: display 0.5s ease-in-out;
+    transition: display 0.5s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav .navbar-element.open {
+    -webkit-transition: display 0.5s ease-in-out;
+    transition: display 0.5s ease-in-out;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 6rem;
+    width: 90%;
+    z-index: 99;
+  }
+  nav .navbar-element.open,
+  nav .navbar-element.open .links,
+  nav .navbar-element.open .login-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+nav .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav .mobile {
+    display: block;
+  }
+}
+
+.image {
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
