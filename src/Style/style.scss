@@ -7,12 +7,16 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
   max-width: 1200px;
   margin: 0 auto;
   @media screen and (min-width: 800px) {
+    & {
+      padding-bottom: 6rem;
+    }
     & .content {
       display: flex;
       align-items: center;
@@ -30,7 +34,7 @@ header {
         & p {
           line-height: 1.4;
           font-size: clamp(1rem, 2vw, 1.2rem);
-          color: $gray-violet;
+          color: $grayish-violet;
         }
       }
       & .image {
@@ -64,7 +68,7 @@ header {
       }
       p {
         font-size: 1rem;
-        color: $gray-violet;
+        color: $grayish-violet;
         line-height: 1.5;
         margin-bottom: 1rem;
       }
@@ -152,4 +156,28 @@ nav {
 
 .image {
   overflow: hidden;
+}
+section {
+  background-color: $bg-section;
+  max-width: 1200px;
+  margin: 0 auto;
+  & .form-container {
+    margin: 0 auto;
+    width: 90%;
+
+    border-radius: 10px;
+    padding: 2rem 2.2rem;
+    & form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & .form-input {
+        flex: 1;
+      }
+      & .form-btn {
+        width: 120px;
+      }
+    }
+  }
 }

@@ -12,12 +12,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Form />
+      <section>
+        <Form />
 
-      {shortLink &&
-        linkArray.map((item, index) => (
-          <LinkItem key={index} link={item.result} />
-        ))}
+        {shortLink &&
+          linkArray.map((item, index) => (
+            <LinkItem key={index} link={item.result} />
+          ))}
+      </section>
     </div>
   );
 }

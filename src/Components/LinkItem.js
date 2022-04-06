@@ -1,6 +1,8 @@
 import React from "react";
-
+import { useCopyLink } from "../Hooks/useCopyLink";
 const LinkItem = ({ link }) => {
+  const [copied, copyToClipboard] = useCopyLink();
+
   return (
     <div>
       <div className="link-item-container">
@@ -10,7 +12,9 @@ const LinkItem = ({ link }) => {
             <a href={link.full_short_link} target="_blank">
               {link.full_short_link}
             </a>
-            <button>CUSTOM_BUTTON</button>
+            <button onClick={() => copyToClipboard({ link })}>
+              {copied ? "kopyalandı" : "kopyala"}
+            </button>
           </div>
         </div>
       </div>

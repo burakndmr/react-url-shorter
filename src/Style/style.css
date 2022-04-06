@@ -5,6 +5,8 @@
   text-decoration: none;
   list-style: none;
   font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
@@ -13,6 +15,9 @@ header {
 }
 
 @media screen and (min-width: 800px) {
+  header {
+    padding-bottom: 6rem;
+  }
   header .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -198,5 +203,41 @@ nav .mobile {
 
 .image {
   overflow: hidden;
+}
+
+section {
+  background-color: #eff0f5;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section .form-container {
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 10px;
+  padding: 2rem 2.2rem;
+}
+
+section .form-container form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .form-container form .form-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section .form-container form .form-btn {
+  width: 120px;
 }
 /*# sourceMappingURL=style.css.map */

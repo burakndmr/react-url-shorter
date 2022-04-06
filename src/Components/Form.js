@@ -46,8 +46,19 @@ const Form = () => {
   return (
     <div className="form-container">
       <form onSubmit={submitHandler}>
-        <input type="text" value={link} onChange={inputHandler} />
-        <input type="submit" value="Shorten It!" onClick={submitHandler} />
+        <input
+          className="form-input"
+          type="text"
+          value={link}
+          placeholder="Shorten a link here..."
+          onChange={inputHandler}
+        />
+        <input
+          className="form-btn"
+          type="submit"
+          value="Shorten It!"
+          onClick={submitHandler}
+        />
       </form>
     </div>
   );
