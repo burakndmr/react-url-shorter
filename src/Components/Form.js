@@ -10,6 +10,7 @@ const Form = () => {
     useContext(MainContext);
 
   const [apiData, setApiData] = useState();
+  const [empty, setEmpty] = useState(false);
   useEffect(() => {
     // if the shortLink is not empty
     if (apiData) {
@@ -37,22 +38,31 @@ const Form = () => {
   const inputHandler = (e) => {
     const input = e.target.value;
     setLink(input);
+    if (link != "") {
+      setEmpty(false);
+    }
   };
   const submitHandler = (e) => {
     e.preventDefault();
     setApiData(`${api}${link}`);
+    if (link == "") {
+      setEmpty(true);
+    } else {
+      setEmpty(false);
+    }
     setLink("");
   };
   return (
     <div className="form-container">
       <form onSubmit={submitHandler}>
         <input
-          className="form-input"
+          className={empty ? "form-input empty" : "form-input"}
           type="text"
           value={link}
           placeholder="Shorten a link here..."
           onChange={inputHandler}
         />
+        {empty ? <p className="empty-error">Please add a link</p> : null}
         <input
           className="form-btn"
           type="submit"

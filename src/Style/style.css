@@ -214,8 +214,12 @@ section {
 section .form-container {
   margin: 0 auto;
   width: 90%;
+  background-image: url("../Assets/images/bg-shorten-desktop.svg");
+  background-color: #3b3054;
+  background-position: center;
+  background-size: cover;
   border-radius: 10px;
-  padding: 2rem 2.2rem;
+  padding: 2.5rem 2rem;
 }
 
 section .form-container form {
@@ -229,15 +233,54 @@ section .form-container form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 section .form-container form .form-input {
+  border: none;
+  border-radius: 5px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 2.5rem;
+  padding-left: 1rem;
+  outline: none;
+}
+
+section .form-container form .form-input.empty {
+  border: red solid 1px;
+}
+
+section .form-container form .form-input.empty::-webkit-input-placeholder {
+  color: red;
+}
+
+section .form-container form .form-input.empty:-ms-input-placeholder {
+  color: red;
+}
+
+section .form-container form .form-input.empty::-ms-input-placeholder {
+  color: red;
+}
+
+section .form-container form .form-input.empty::placeholder {
+  color: red;
+}
+
+section .form-container form .empty-error {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  font-size: 0.7em;
+  font-style: italic;
+  color: #f46262;
 }
 
 section .form-container form .form-btn {
+  border: none;
+  border-radius: 5px;
+  height: 2.5rem;
+  margin-left: 1rem;
   width: 120px;
 }
 /*# sourceMappingURL=style.css.map */
