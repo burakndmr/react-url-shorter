@@ -21,7 +21,9 @@ const Navbar = () => {
 
         <div className="login-buttons">
           <a href="#">Login</a>
-          <a href="#">Sign Up</a>
+          <a className="sign-up" href="#">
+            Sign Up
+          </a>
         </div>
       </div>
       <div className="mobile">

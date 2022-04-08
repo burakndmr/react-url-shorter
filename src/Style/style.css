@@ -19,6 +19,9 @@ header {
     padding-bottom: 6rem;
   }
   header .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,7 +35,6 @@ header {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    margin-left: 5vw;
   }
   header .content .text {
     width: 50vw;
@@ -59,6 +61,7 @@ header {
 @media screen and (max-width: 800px) {
   header .content {
     display: block;
+    padding-bottom: 5rem;
   }
   header .image {
     margin-left: 1rem;
@@ -96,11 +99,17 @@ header .btn {
   font-weight: 700;
   border-radius: 500px;
   margin: 1em auto;
+  cursor: pointer;
+}
+
+header .btn:hover {
+  background-color: #8ceeee;
 }
 
 nav {
   max-width: 1200px;
   margin: 0 auto;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,8 +120,6 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 2em 0;
-  width: 90%;
-  margin: 0 auto;
 }
 
 nav .logo {
@@ -133,7 +140,12 @@ nav .navbar-element {
 }
 
 nav .navbar-element .links a {
+  color: #9e9aa7;
   margin-right: 1em;
+}
+
+nav .navbar-element .links a:hover {
+  color: #232127;
 }
 
 nav .navbar-element .login-buttons {
@@ -149,7 +161,25 @@ nav .navbar-element .login-buttons {
 }
 
 nav .navbar-element .login-buttons a {
+  color: #9e9aa7;
   margin-right: 1em;
+}
+
+nav .navbar-element .login-buttons a:hover {
+  color: #232127;
+}
+
+nav .navbar-element .login-buttons .sign-up {
+  color: #fff;
+  background-color: #2acfcf;
+  padding: 0.5em 1.3em;
+  font-weight: 700;
+  border-radius: 500px;
+}
+
+nav .navbar-element .login-buttons .sign-up:hover {
+  color: #fff;
+  background-color: #8ceeee;
 }
 
 @media screen and (max-width: 800px) {
@@ -207,13 +237,23 @@ nav .mobile {
 
 section {
   background-color: #eff0f5;
+  position: relative;
+}
+
+section .content-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-section .form-container {
+section .content-container .form-container {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin: 0 auto;
   width: 90%;
+  max-width: 1080px;
   background-image: url("../Assets/images/bg-shorten-desktop.svg");
   background-color: #3b3054;
   background-position: center;
@@ -222,7 +262,7 @@ section .form-container {
   padding: 2.5rem 2rem;
 }
 
-section .form-container form {
+section .content-container .form-container form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,7 +276,7 @@ section .form-container form {
   position: relative;
 }
 
-section .form-container form .form-input {
+section .content-container .form-container form .form-input {
   border: none;
   border-radius: 5px;
   -webkit-box-flex: 1;
@@ -247,27 +287,27 @@ section .form-container form .form-input {
   outline: none;
 }
 
-section .form-container form .form-input.empty {
-  border: red solid 1px;
+section .content-container .form-container form .form-input.empty {
+  border: #f46262 solid 3px;
 }
 
-section .form-container form .form-input.empty::-webkit-input-placeholder {
-  color: red;
+section .content-container .form-container form .form-input.empty::-webkit-input-placeholder {
+  color: #f46262;
 }
 
-section .form-container form .form-input.empty:-ms-input-placeholder {
-  color: red;
+section .content-container .form-container form .form-input.empty:-ms-input-placeholder {
+  color: #f46262;
 }
 
-section .form-container form .form-input.empty::-ms-input-placeholder {
-  color: red;
+section .content-container .form-container form .form-input.empty::-ms-input-placeholder {
+  color: #f46262;
 }
 
-section .form-container form .form-input.empty::placeholder {
-  color: red;
+section .content-container .form-container form .form-input.empty::placeholder {
+  color: #f46262;
 }
 
-section .form-container form .empty-error {
+section .content-container .form-container form .empty-error {
   position: absolute;
   left: 0;
   top: 42px;
@@ -276,11 +316,81 @@ section .form-container form .empty-error {
   color: #f46262;
 }
 
-section .form-container form .form-btn {
+section .content-container .form-container form .form-btn {
   border: none;
   border-radius: 5px;
   height: 2.5rem;
   margin-left: 1rem;
   width: 120px;
+}
+
+section .content-container .form-container form .form-btn {
+  color: #fff;
+  background-color: #2acfcf;
+}
+
+section .content-container .form-container form .form-btn:hover {
+  background-color: #8ceeee;
+}
+
+section .content-container .links-container {
+  padding-top: 5rem;
+}
+
+section .content-container .link-item-container {
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .content-container .link-item-container .link-item-short {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .content-container .link-item-container .link-item-short a {
+  margin-right: 1rem;
+  color: #2acfcf;
+}
+
+section .content-container .link-item-container button {
+  border: none;
+  border-radius: 5px;
+  height: 2.3rem;
+  width: 6rem;
+  color: #fff;
+  background-color: #2acfcf;
+}
+
+section .content-container .link-item-container button:hover {
+  background-color: #8ceeee;
+}
+
+section .content-container .link-item-container button.clicked {
+  background-color: #3b3054;
+}
+
+section .detailed {
+  padding-top: 150px;
 }
 /*# sourceMappingURL=style.css.map */

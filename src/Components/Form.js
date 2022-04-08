@@ -38,7 +38,7 @@ const Form = () => {
   const inputHandler = (e) => {
     const input = e.target.value;
     setLink(input);
-    if (link != "") {
+    if (link !== "") {
       setEmpty(false);
     }
   };
@@ -62,7 +62,7 @@ const Form = () => {
           placeholder="Shorten a link here..."
           onChange={inputHandler}
         />
-        {empty ? <p className="empty-error">Please add a link</p> : null}
+        {empty && <p className="empty-error">Please add a link</p>}
         <input
           className="form-btn"
           type="submit"
