@@ -1,12 +1,9 @@
 import { useContext, useState } from "react";
 import MainContext from "./Context/MainContext";
-import axios from "axios";
-import { useEffect } from "react";
 import Form from "./Components/Form";
 import LinkItem from "./Components/LinkItem";
-
 import Header from "./Components/Header";
-import Detailed from "./Components/Detailed";
+import Details from "./Components/Details";
 function App() {
   const { shortLink, linkArray } = useContext(MainContext);
 
@@ -25,7 +22,7 @@ function App() {
         </div>
       </section>
       <section>
-        <Detailed />
+        <Details />
       </section>
     </div>
   );

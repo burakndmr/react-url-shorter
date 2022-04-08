@@ -9,6 +9,7 @@ const LinkItem = ({ link }) => {
         <div className="link-item-original">
           <p>{link.original_link}</p>
         </div>
+        <div className="line"></div>
         <div className="link-item-short">
           <a href={link.full_short_link} target="_blank">
             {link.full_short_link}

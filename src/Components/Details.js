@@ -1,8 +1,8 @@
 import React from "react";
 
-const Detailed = () => {
+const Details = () => {
   return (
-    <div className="detailed">
+    <div className="details">
       <h2>Advanced Statistics</h2>
       <p>
         Track how your links are performing across the web with our advanced
@@ -22,4 +22,4 @@ const Detailed = () => {
   );
 };
 
-export default Detailed;
+export default Details;
