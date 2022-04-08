@@ -124,6 +124,7 @@ nav {
 
 nav .logo {
   margin-right: 1.2rem;
+  cursor: pointer;
 }
 
 nav .navbar-element {
@@ -139,6 +140,12 @@ nav .navbar-element {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  nav .navbar-element .links {
+    margin: 1.2rem auto;
+  }
+}
+
 nav .navbar-element .links a {
   color: #9e9aa7;
   margin-right: 1em;
@@ -146,6 +153,17 @@ nav .navbar-element .links a {
 
 nav .navbar-element .links a:hover {
   color: #232127;
+}
+
+@media screen and (max-width: 800px) {
+  nav .navbar-element .links a {
+    color: #fff;
+    font-weight: 700;
+    margin: 0.5rem auto;
+  }
+  nav .navbar-element .links a:hover {
+    color: #fff;
+  }
 }
 
 nav .navbar-element .login-buttons {
@@ -160,16 +178,49 @@ nav .navbar-element .login-buttons {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 800px) {
+  nav .navbar-element .login-buttons {
+    border-top: 1px solid #9e9aa7;
+    padding: 1.2rem 0;
+    width: 100%;
+  }
+}
+
 nav .navbar-element .login-buttons a {
-  color: #9e9aa7;
   margin-right: 1em;
 }
 
-nav .navbar-element .login-buttons a:hover {
+nav .navbar-element .login-buttons a.login {
+  color: #9e9aa7;
+}
+
+@media screen and (max-width: 800px) {
+  nav .navbar-element .login-buttons a.login {
+    color: #fff;
+  }
+}
+
+nav .navbar-element .login-buttons a.login:hover {
   color: #232127;
 }
 
-nav .navbar-element .login-buttons .sign-up {
+@media screen and (max-width: 800px) {
+  nav .navbar-element .login-buttons a.login:hover {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav .navbar-element .login-buttons a {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0.5rem auto;
+    font-weight: 700;
+  }
+}
+
+nav .navbar-element .sign-up {
   color: #fff;
   background-color: #2acfcf;
   padding: 0.5em 1.3em;
@@ -177,7 +228,7 @@ nav .navbar-element .login-buttons .sign-up {
   border-radius: 500px;
 }
 
-nav .navbar-element .login-buttons .sign-up:hover {
+nav .navbar-element .sign-up:hover {
   color: #fff;
   background-color: #8ceeee;
 }
@@ -185,21 +236,22 @@ nav .navbar-element .login-buttons .sign-up:hover {
 @media screen and (max-width: 800px) {
   nav .navbar-element.close {
     display: none;
-    -webkit-transition: display 0.5s ease-in-out;
-    transition: display 0.5s ease-in-out;
   }
 }
 
 @media screen and (max-width: 800px) {
   nav .navbar-element.open {
-    -webkit-transition: display 0.5s ease-in-out;
-    transition: display 0.5s ease-in-out;
+    background-color: #3b3054;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     top: 6rem;
     width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     z-index: 99;
   }
   nav .navbar-element.open,
@@ -229,6 +281,10 @@ nav .mobile {
   nav .mobile {
     display: block;
   }
+}
+
+nav .menu {
+  width: 2rem;
 }
 
 .image {

@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../Assets/Components/Icons/Logo";
 import { useState } from "react";
+import Menu from "../Assets/images/menu.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,14 +21,17 @@ const Navbar = () => {
         </div>
 
         <div className="login-buttons">
-          <a href="#">Login</a>
+          <a className="login" href="#">
+            Login
+          </a>
           <a className="sign-up" href="#">
             Sign Up
           </a>
         </div>
       </div>
       <div className="mobile">
-        <button onClick={toggle}>H</button>
+        <img className="menu" src={Menu} onClick={toggle} />
+        {/* <button onClick={toggle}>H</button> */}
       </div>
     </nav>
   );
