@@ -404,17 +404,109 @@ section {
     }
   }
   & .details {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding-top: 150px;
     text-align: center;
+    padding-bottom: 5rem;
+    .details-container {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      gap: 1.5rem;
+      z-index: 0;
+
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .line {
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        background-color: $cyan;
+        top: 50%;
+
+        left: 0;
+
+        transform: translateY(-50%);
+
+        z-index: 1;
+        @media screen and (max-width: 800px) {
+          width: 600px;
+          left: auto;
+          transform: rotate(90deg);
+        }
+      }
+      .box {
+        position: relative;
+        padding-top: 50px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #fff;
+        border-radius: 10px;
+        z-index: 2;
+        text-align: start;
+        align-self: flex-start;
+        @media screen and (max-width: 800px) {
+          max-width: 100%;
+          width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        p {
+          padding-top: 1rem;
+          font-size: 16px;
+          margin-bottom: 2rem;
+        }
+      }
+      #two {
+        margin-top: 75px;
+        @media screen and (max-width: 800px) {
+          margin-top: 3rem;
+        }
+      }
+      #three {
+        margin-top: 150px;
+        @media screen and (max-width: 800px) {
+          margin-top: 3rem;
+        }
+      }
+      .icon-container {
+        position: absolute;
+        top: -50px;
+        height: 5.5rem;
+        width: 5.5rem;
+        display: inline-block;
+        background-color: $dark-violet;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 800px) {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
     h2 {
+      margin-top: 3rem;
       text-align: center;
       color: $very-dark-blue;
       margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
     }
     p {
-      width: clamp(60%, 300px, 90%);
       margin: 0 auto;
       color: $gray;
+      // font-size: 1.2rem;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+
+      margin-bottom: 4rem;
     }
   }
 }
