@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/url-shorter-react/static/css/main.aecb825a.css",
-    "main.js": "/url-shorter-react/static/js/main.2cd919d2.js",
-    "static/media/illustration-working.svg": "/url-shorter-react/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
-    "static/media/bg-boost-desktop.svg": "/url-shorter-react/static/media/bg-boost-desktop.772154c9b0e451733f5e.svg",
-    "index.html": "/url-shorter-react/index.html",
-    "static/media/bg-shorten-desktop.svg": "/url-shorter-react/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
-    "main.aecb825a.css.map": "/url-shorter-react/static/css/main.aecb825a.css.map",
-    "main.2cd919d2.js.map": "/url-shorter-react/static/js/main.2cd919d2.js.map"
+    "main.css": "/react-url-shorter/static/css/main.ef9e444b.css",
+    "main.js": "/react-url-shorter/static/js/main.a3ed5cef.js",
+    "static/media/illustration-working.svg": "/react-url-shorter/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/bg-boost-desktop.svg": "/react-url-shorter/static/media/bg-boost-desktop.772154c9b0e451733f5e.svg",
+    "index.html": "/react-url-shorter/index.html",
+    "static/media/bg-shorten-desktop.svg": "/react-url-shorter/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
+    "main.ef9e444b.css.map": "/react-url-shorter/static/css/main.ef9e444b.css.map",
+    "main.a3ed5cef.js.map": "/react-url-shorter/static/js/main.a3ed5cef.js.map"
   },
   "entrypoints": [
-    "static/css/main.aecb825a.css",
-    "static/js/main.2cd919d2.js"
+    "static/css/main.ef9e444b.css",
+    "static/js/main.a3ed5cef.js"
   ]
 }
