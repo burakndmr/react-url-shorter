@@ -509,4 +509,115 @@ section {
       margin-bottom: 4rem;
     }
   }
+  .get-started {
+    background-image: url(../Assets/images/bg-boost-desktop.svg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-color: $dark-violet;
+    text-align: center;
+    padding: 2.7rem;
+    color: #fff;
+    h1 {
+      font-size: 2.25rem;
+      padding-bottom: 1rem;
+    }
+    & .btn {
+      border: none;
+      background-color: $cyan;
+      color: #fff;
+      font-size: 1.3rem;
+      padding: 0.5em 1.5em;
+      font-weight: 700;
+      border-radius: 500px;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $hover-cyan;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $very-dark-violet;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    @media screen and (max-width: 940px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .others {
+      display: flex;
+      @media screen and (max-width: 940px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .footer-links {
+        display: flex;
+        @media screen and (max-width: 940px) {
+          justify-content: center;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          align-items: flex-start;
+          gap: 20px;
+        }
+        @media screen and (max-width: 430px) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .links {
+          display: flex;
+          flex-direction: column;
+          margin-right: 70px;
+          @media screen and (max-width: 940px) {
+            margin: 0;
+          }
+          @media screen and (max-width: 430px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          h3 {
+            color: #fff;
+            margin-bottom: 15px;
+          }
+          a {
+            color: $grayish-violet;
+            margin-top: 5px;
+            &:hover {
+              color: $cyan;
+            }
+          }
+        }
+      }
+      .social-media-icons {
+        display: flex;
+
+        gap: 20px;
+        .icon {
+          fill: #fff;
+          cursor: pointer;
+        }
+        .icon:hover {
+          fill: $cyan;
+        }
+      }
+    }
+  }
 }

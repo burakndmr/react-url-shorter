@@ -699,4 +699,188 @@ section .details p {
   font-size: clamp(1rem, 3vw, 1.2rem);
   margin-bottom: 4rem;
 }
+
+section .get-started {
+  background-image: url(../Assets/images/bg-boost-desktop.svg);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-color: #3b3054;
+  text-align: center;
+  padding: 2.7rem;
+  color: #fff;
+}
+
+section .get-started h1 {
+  font-size: 2.25rem;
+  padding-bottom: 1rem;
+}
+
+section .get-started .btn {
+  border: none;
+  background-color: #2acfcf;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.5em 1.5em;
+  font-weight: 700;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+section .get-started .btn:hover {
+  background-color: #8ceeee;
+}
+
+footer {
+  background-color: #232127;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+@media screen and (max-width: 940px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+footer .container .others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 940px) {
+  footer .container .others {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+footer .container .others .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 940px) {
+  footer .container .others .footer-links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  footer .container .others .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer .container .others .footer-links .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 70px;
+}
+
+@media screen and (max-width: 940px) {
+  footer .container .others .footer-links .links {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  footer .container .others .footer-links .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer .container .others .footer-links .links h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+footer .container .others .footer-links .links a {
+  color: #9e9aa7;
+  margin-top: 5px;
+}
+
+footer .container .others .footer-links .links a:hover {
+  color: #2acfcf;
+}
+
+footer .container .others .social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+footer .container .others .social-media-icons .icon {
+  fill: #fff;
+  cursor: pointer;
+}
+
+footer .container .others .social-media-icons .icon:hover {
+  fill: #2acfcf;
+}
 /*# sourceMappingURL=style.css.map */

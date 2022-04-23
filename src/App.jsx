@@ -4,6 +4,8 @@ import Form from "./Components/Form";
 import LinkItem from "./Components/LinkItem";
 import Header from "./Components/Header";
 import Details from "./Components/Details";
+import GetStarted from "./Components/GetStarted";
+import Footer from "./Components/Footer";
 function App() {
   const { shortLink, linkArray } = useContext(MainContext);
 
@@ -23,7 +25,9 @@ function App() {
       </section>
       <section>
         <Details />
+        <GetStarted />
       </section>
+      <Footer />
     </div>
   );
 }

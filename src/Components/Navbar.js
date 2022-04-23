@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <Logo />
+        <Logo prop={"#34313D"} />
       </div>
       <div className={isOpen ? "navbar-element open" : "navbar-element close"}>
         <div className="links">
